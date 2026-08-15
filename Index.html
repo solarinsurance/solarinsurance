@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Insurance India - Complete Home & Rooftop Solar Protection</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for professional icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#e6f0ff',
+                            100: '#cce0ff',
+                            500: '#0052cc',
+                            600: '#0040a8',
+                            900: '#001a4d',
+                        },
+                        solar: {
+                            light: '#fff8eb',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        }
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-orange-500 selection:text-white">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-brand-900 via-blue-900 to-slate-900 text-white text-xs sm:text-sm py-2.5 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-3">
+                <span class="bg-orange-500 text-white text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wider animate-pulse">PM Surya Ghar</span>
+                <span>Govt subsidy up to ₹78,000/- | Secure your Lacs of investment rooftop solar today!</span>
+            </div>
+            <div class="flex items-center gap-6 font-medium">
+                <div class="flex items-center gap-3">
+                    <a href="tel:8905212389" class="hover:text-orange-400 transition flex items-center gap-1.5">
+                        <i class="fa-solid fa-phone text-orange-500"></i> 8905212389
+                    </a>
+                    <span class="text-slate-500">|</span>
+                    <a href="tel:9119321238" class="hover:text-orange-400 transition">9119321238</a>
+                </div>
+                <a href="mailto:solarinsurance.in@gmail.com" class="hover:text-orange-400 transition hidden md:flex items-center gap-1.5">
+                    <i class="fa-solid fa-envelope text-orange-500"></i> solarinsurance.in@gmail.com
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-2 sm:gap-3 group shrink-0">
+                <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-br from-blue-600 to-brand-900 flex items-center justify-center text-white shadow-md shadow-blue-500/20 group-hover:scale-105 transition">
+                    <i class="fa-solid fa-shield-halved text-xl sm:text-2xl text-orange-400"></i>
+                </div>
+                <div>
+                    <div class="text-sm sm:text-xl font-extrabold tracking-tight text-brand-900 flex items-center gap-1.5">
+                        SOLAR INSURANCE <span class="text-orange-500">INDIA</span>
+                    </div>
+                    <div class="text-[9px] sm:text-[10px] font-bold tracking-widest text-slate-500 uppercase">Protect Today, Power Tomorrow.</div>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden xl:flex items-center gap-4 2xl:gap-6 font-semibold text-xs sm:text-sm text-slate-600 shrink-0">
+                <a href="#overview" class="hover:text-blue-600 transition">Overview</a>
+                <a href="#why-choose" class="hover:text-blue-600 transition">Why Choose Us</a>
+                <a href="#surya-ghar" class="hover:text-blue-600 transition">PM Surya Ghar</a>
+                <a href="#coverage" class="hover:text-blue-600 transition">Coverage</a>
+                <a href="#benefits" class="hover:text-blue-600 transition">Key Benefits</a>
+                <a href="#vendor-section" class="hover:text-blue-600 transition">For Vendors</a>
+                <a href="#claims" class="hover:text-blue-600 transition">Fast Claims</a>
+                <a href="#faqs" class="hover:text-blue-600 transition">FAQs</a>
+            </nav>
+
+            <!-- Call to Action Button in Header -->
+            <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+                <a href="#checkout-section" class="inline-flex items-center justify-center bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-bold text-xs sm:text-sm px-3.5 sm:px-5 py-2.5 sm:py-3 rounded-xl shadow-lg shadow-orange-500/25 transition transform active:scale-95">
+                    Select Plan & Pay
+                </a>
+                <button id="menu-btn" class="xl:hidden p-2.5 text-slate-700 hover:bg-slate-100 rounded-lg">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden xl:hidden bg-white border-b border-slate-200 px-6 py-6 space-y-4 shadow-xl max-h-[80vh] overflow-y-auto">
+            <a href="#overview" class="block font-semibold text-slate-700 hover:text-blue-600">Overview</a>
+            <a href="#why-choose" class="block font-semibold text-slate-700 hover:text-blue-600">Why Choose Us</a>
+            <a href="#surya-ghar" class="block font-semibold text-slate-700 hover:text-blue-600">PM Surya Ghar Yojana</a>
+            <a href="#coverage" class="block font-semibold text-slate-700 hover:text-blue-600">Coverage (15+ Risks)</a>
+            <a href="#benefits" class="block font-semibold text-slate-700 hover:text-blue-600">Key Benefits & Extras</a>
+            <a href="#vendor-section" class="block font-semibold text-slate-700 hover:text-blue-600">Solar Vendors & Bulk Offer</a>
+            <a href="#claims" class="block font-semibold text-slate-700 hover:text-blue-600">Fast Claims & Documentation</a>
+            <a href="#faqs" class="block font-semibold text-slate-700 hover:text-blue-600">FAQs</a>
+            <a href="#checkout-section" class="block font-semibold text-orange-600 font-bold">Select Plan and Pay</a>
+            <div class="pt-4 border-t border-slate-100 flex flex-col gap-3">
+                <div class="flex items-center gap-2 text-brand-900 font-bold text-sm">
+                    <i class="fa-solid fa-phone text-orange-500 w-5"></i> 
+                    <a href="tel:8905212389" class="hover:underline">8905212389</a>, <a href="tel:9119321238" class="hover:underline">9119321238</a>
+                </div>
+                <a href="mailto:solarinsurance.in@gmail.com" class="flex items-center gap-3 text-slate-600 text-sm">
+                    <i class="fa-solid fa-envelope text-orange-500 w-5"></i> solarinsurance.in@gmail.com
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="overview" class="relative overflow-hidden bg-gradient-to-br from-brand-900 via-blue-900 to-slate-900 text-white py-20 lg:py-28">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#f59e0b_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 bg-orange-500/20 border border-orange-500/40 text-orange-300 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
+                        <i class="fa-solid fa-certificate"></i> Comprehensive Complete Home Protect Policy
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Your Home is Your Life’s Investment. <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-300">Protect Your Solar & Structure Today.</span>
+                    </h1>
+                    <p class="text-lg text-slate-300 max-w-2xl font-normal leading-relaxed">
+                        Combine your home building, household contents, and rooftop solar installations into one powerful long-term policy (up to 5 years). Safeguard against 15+ major natural & man-made risks.
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="#checkout-section" class="bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-xl shadow-orange-500/30 transition transform hover:-translate-y-0.5 flex items-center gap-2">
+                            <span>Select Plan and Pay</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="https://wa.me/918905212389?text=Hello%2C%20I%20want%20instant%20quote%20assistance%20for%20Solar%20Insurance." target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-8 py-4 rounded-xl shadow-xl transition flex items-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-xl"></i> Chat on WhatsApp
+                        </a>
+                    </div>
+                    <div class="pt-8 border-t border-white/10 grid grid-cols-3 gap-6 text-slate-300">
+                        <div>
+                            <div class="text-2xl lg:text-3xl font-extrabold text-white">Up to 5 Yrs</div>
+                            <div class="text-xs text-slate-400 mt-0.5">Long-Term Tenure</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl lg:text-3xl font-extrabold text-orange-400">15+ Risks</div>
+                            <div class="text-xs text-slate-400 mt-0.5">Comprehensive Cover</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl lg:text-3xl font-extrabold text-white">Video Claim</div>
+                            <div class="text-xs text-slate-400 mt-0.5">Hassle-free settlement</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5">
+                    <div class="bg-white text-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-100 relative">
+                        <div class="absolute -top-4 -right-4 bg-orange-500 text-white text-xs font-bold px-3.5 py-1.5 rounded-full shadow-md flex items-center gap-1.5">
+                            <i class="fa-solid fa-bolt"></i> Solar Asset Safe
+                        </div>
+                        <h3 class="text-2xl font-bold text-brand-900 mb-2">Instant Quote Inquiry</h3>
+                        <p class="text-xs text-slate-500 mb-6">Fill in your details for a call back from Solar Insurance India specialists.</p>
+                        
+                        <form action="https://formsubmit.co/solarinsurance.in@gmail.com" method="POST" onsubmit="sendWhatsAppLead(event, 'quick')" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Full Name</label>
+                                <input type="text" id="q-name" name="name" required placeholder="Enter your name" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Phone Number</label>
+                                <input type="tel" id="q-phone" name="phone" required placeholder="10-digit mobile number" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 transition">
+                            </div>
+                            <div class="grid grid-cols-2 gap-3">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Property Type</label>
+                                    <select id="q-property" name="property_type" class="w-full px-3 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 transition">
+                                        <option>Home Building Including Solar</option>
+                                        <option>Home Content including Solar</option>
+                                        <option>Only Solar</option>
+                                        <option>Home Building + Home Content Including Solar</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Solar Installed?</label>
+                                    <select id="q-solar" name="solar_status" class="w-full px-3 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 transition">
+                                        <option>Yes (PM Surya Ghar)</option>
+                                        <option>Yes (Standard)</option>
+                                        <option>Planning Soon</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <input type="hidden" name="_subject" value="New Quick Inquiry from Solar Insurance India Website!">
+                            <input type="hidden" name="_captcha" value="false">
+                            <button type="submit" class="w-full bg-brand-900 hover:bg-brand-600 text-white font-bold py-3.5 rounded-xl shadow-lg transition flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-shield-check text-orange-400"></i> Request Expert Consultation
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ATTRACTIVE CTA BANNER 1: Hook & Multi-Channel -->
+    <section class="py-12 bg-gradient-to-r from-orange-500 via-amber-500 to-orange-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+            <span class="bg-white/20 text-white text-xs font-extrabold px-4 py-1.5 rounded-full uppercase tracking-widest inline-block">⚡ Don't Risk Your Lacs of Investment!</span>
+            <h2 class="text-2xl sm:text-4xl font-black tracking-tight">Secure Your Rooftop Solar in Less Than 2 Minutes</h2>
+            <p class="text-sm sm:text-base max-w-2xl mx-auto font-medium opacity-95">Choose your preferred way to get started right now—fill our quick form, chat instantly on WhatsApp, or talk to our experts directly!</p>
+            <div class="flex flex-wrap justify-center gap-4 pt-2">
+                <a href="#checkout-section" class="bg-brand-900 hover:bg-brand-600 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg transition text-sm flex items-center gap-2">
+                    <i class="fa-solid fa-bolt text-orange-400"></i> Select Plan & Pay Online
+                </a>
+                <a href="https://wa.me/918905212389?text=Hello%2C%20I%20want%20to%20get%20instant%20quote%20assistance%20on%20WhatsApp." target="_blank" class="bg-emerald-700 hover:bg-emerald-800 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg transition text-sm flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Quick WhatsApp Chat
+                </a>
+                <a href="tel:8905212389" class="bg-white text-brand-900 hover:bg-slate-100 font-bold px-6 py-3.5 rounded-xl shadow-lg transition text-sm flex items-center gap-2">
+                    <i class="fa-solid fa-phone text-orange-500"></i> Call 8905212389
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section id="why-choose" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="bg-blue-100 text-blue-800 text-xs font-extrabold px-3.5 py-1.5 rounded-full uppercase tracking-wider">Our Core Advantage</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-900 mt-3 mb-4">
+                    Why Should You Choose Solar Insurance India?
+                </h2>
+                <p class="text-slate-600 text-base">
+                    Choosing the right insurance for your solar system can be confusing. We focus specifically on helping solar system owners understand their insurance options and protect their valuable investments since 2021.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-slate-50 border border-slate-200 p-8 rounded-3xl space-y-4 hover:border-blue-300 transition">
+                    <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-solar-panel"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-900">1. Specialised Focus on Solar</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Unlike general insurance platforms, we focus specifically on the solar industry and understand rooftop solar systems, their components, and lifecycle risks across residential, commercial, and industrial projects.
+                    </p>
+                </div>
+
+                <div class="bg-slate-50 border border-slate-200 p-8 rounded-3xl space-y-4 hover:border-blue-300 transition">
+                    <div class="w-12 h-12 bg-orange-500 text-white rounded-xl flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-900">2. Understanding Solar Assets & Risks</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        A solar system includes modules, inverters, mounting structures, cables, and electrical equipment exposed to severe weather, fire, electrical surges, and unforeseen risks.
+                    </p>
+                </div>
+
+                <div class="bg-slate-50 border border-slate-200 p-8 rounded-3xl space-y-4 hover:border-blue-300 transition">
+                    <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-timeline"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-900">3. Solutions for Every Project Stage</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Whether your solar project is in Transit, Construction, Installation, or Operational stage, we assist in exploring suitable insurance solutions for every phase.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200">
+                    <h4 class="font-bold text-brand-900 mb-2"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Rooftop to Large Projects</h4>
+                    <p class="text-xs text-slate-600">Residential, PM Surya Ghar, C&I, ground-mounted, solar parks, and bulk client requirements.</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200">
+                    <h4 class="font-bold text-brand-900 mb-2"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Simple Documentation</h4>
+                    <p class="text-xs text-slate-600">Minimal requirements like Aadhaar/PAN, invoice or exact risk location PIN code for initial processing.</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200">
+                    <h4 class="font-bold text-brand-900 mb-2"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Expert Coverage Guidance</h4>
+                    <p class="text-xs text-slate-600">Help understanding asset declarations, building vs contents classification, sum insured, and exclusions.</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200">
+                    <h4 class="font-bold text-brand-900 mb-2"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Journey-Long Assistance</h4>
+                    <p class="text-xs text-slate-600">Support beyond buying—guiding you through policy documentation, renewals, and claims processing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PM SURYA GHAR -->
+    <section id="surya-ghar" class="py-20 bg-orange-50/50 border-y border-orange-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="bg-orange-100 text-orange-800 text-xs font-extrabold px-3.5 py-1.5 rounded-full uppercase tracking-wider">National Clean Energy Mission</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-brand-900 mt-3 mb-4">
+                    Your Rooftop Solar is a Major Asset. <span class="text-orange-600">Protect It Like One.</span>
+                </h2>
+                <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                    Under the <strong>PM Surya Ghar Muft Bijli Yojana</strong>, government subsidy is provided up to <strong>₹78,000/-</strong>, while residential solar installations represent lacs of investment. Protect this high-value clean energy investment against unexpected natural and accidental risks!
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition">
+                    <div class="w-14 h-14 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center text-2xl font-bold mb-6">
+                        <i class="fa-solid fa-solar-panel"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-900 mb-3">Solar Panels & Inverters</h3>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                        Under our Complete Home Protect policy definition, <strong>Home Building</strong> explicitly includes permanently attached solar panels, wind turbines, wiring, and associated systems.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition">
+                    <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center text-2xl font-bold mb-6">
+                        <i class="fa-solid fa-house-chimney-crack"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-900 mb-3">Natural & Accidental Risks</h3>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                        Rooftop installations are exposed to extreme weather. Get covered against cyclones, heavy storms, lightning strikes, floods, fires, and accidental impacts.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition">
+                    <div class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center text-2xl font-bold mb-6">
+                        <i class="fa-solid fa-file-shield"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-900 mb-3">10% Auto Escalation</h3>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                        Enjoy peace of mind with a 10% auto-escalation of your Sum Insured every year, ensuring your growing asset value and inflation are fully accounted for.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COVERAGE SECTION -->
+    <section id="coverage" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="bg-blue-100 text-blue-800 text-xs font-extrabold px-3.5 py-1.5 rounded-full uppercase tracking-wider">Comprehensive Protection</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-brand-900 mt-3 mb-4">
+                    Protection Against 15+ Major Risks
+                </h2>
+                <p class="text-slate-600 text-sm sm:text-base">
+                    Whether you own an independent building, villa, or flat, our policy covers your structure, contents, and valuable assets against unforeseen disasters.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-blue-200 transition">
+                    <div class="text-blue-600 text-xl mb-3"><i class="fa-solid fa-fire-flame-curved"></i></div>
+                    <h4 class="font-bold text-brand-900 text-lg mb-1">Fire & Explosion</h4>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Covers destruction or damage caused by fire, bush fire, forest fire, or explosion/implosion.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-blue-200 transition">
+                    <div class="text-orange-500 text-xl mb-3"><i class="fa-solid fa-bolt-lightning"></i></div>
+                    <h4 class="font-bold text-brand-900 text-lg mb-1">Lightning Strike</h4>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Protection against direct lightning strikes damaging building wiring, solar units, or appliances.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-blue-200 transition">
+                    <div class="text-blue-600 text-xl mb-3"><i class="fa-solid fa-earth-americas"></i></div>
+                    <h4 class="font-bold text-brand-900 text-lg mb-1">Earthquake & Convulsions</h4>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Covers tremors, volcanic eruptions, and other seismic shocks or natural ground movements.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-blue-200 transition">
+                    <div class="text-blue-600 text-xl mb-3"><i class="fa-solid fa-cloud-showers-heavy"></i></div>
+                    <h4 class="font-bold text-brand-900 text-lg mb-1">Storm, Cyclone & Flood</h4>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Covers tempest, hurricane, tornado, tsunami, flood, and inundation water damages.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-blue-200 transition">
+                    <div class="text-blue-600 text-xl mb-3"><i class="fa-solid fa-mask-face"></i></div>
+                    <h4 class="font-bold text-brand-900 text-lg mb-1">Burglary & Theft</h4>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Covers burglary and theft occurring within 7 days proximately caused by insured events.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-blue-200 transition">
+                    <div class="text-blue-600 text-xl mb-3"><i class="fa-solid fa-car-burst"></i></div>
+                    <h4 class="font-bold text-brand-900 text-lg mb-1">Impact Damage</h4>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Damage caused by impact of external objects like vehicles, falling trees, aircraft, or walls.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-blue-200 transition">
+                    <div class="text-blue-600 text-xl mb-3"><i class="fa-solid fa-faucet-drip"></i></div>
+                    <h4 class="font-bold text-brand-900 text-lg mb-1">Bursting Water Tanks</h4>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Overflowing or bursting of water tanks, apparatus, pipes, and sprinkler leakage.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-blue-200 transition">
+                    <div class="text-blue-600 text-xl mb-3"><i class="fa-solid fa-shield-heart"></i></div>
+                    <h4 class="font-bold text-brand-900 text-lg mb-1">Terrorism & Riots</h4>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Protection against acts of terrorism, strikes, riots, and malicious property damages.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEY BENEFITS SECTION -->
+    <section id="benefits" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="bg-blue-200 text-brand-900 text-xs font-extrabold px-3.5 py-1.5 rounded-full uppercase tracking-wider">Value Added Extras</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-900 mt-3 mb-4">
+                    More Than Just Basic Insurance Cover
+                </h2>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <div class="text-orange-500 text-lg mb-2"><i class="fa-solid fa-plug-circle-bolt"></i></div>
+                    <h4 class="font-bold text-brand-900 mb-1">Electrical Breakdown</h4>
+                    <p class="text-xs text-slate-600">Covers breakdown risks for consumer durables and solar inverters inside premises.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <div class="text-orange-500 text-lg mb-2"><i class="fa-solid fa-house-chimney"></i></div>
+                    <h4 class="font-bold text-brand-900 mb-1">Alternate Accommodation</h4>
+                    <p class="text-xs text-slate-600">Covers actual rent incurred when home becomes uninhabitable due to insured peril.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <div class="text-orange-500 text-lg mb-2"><i class="fa-solid fa-user-shield"></i></div>
+                    <h4 class="font-bold text-brand-900 mb-1">Personal Accident</h4>
+                    <p class="text-xs text-slate-600">Compensation for unfortunate death resulting from an insured peril.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <div class="text-orange-500 text-lg mb-2"><i class="fa-solid fa-key"></i></div>
+                    <h4 class="font-bold text-brand-900 mb-1">Lock & Key Cover</h4>
+                    <p class="text-xs text-slate-600">Covers key replacements and security lock changes after break-in attempts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UNINSURED LOSS SECTION -->
+    <section id="loss-calculator" class="py-20 bg-slate-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#f59e0b_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="bg-orange-500/20 border border-orange-500/40 text-orange-400 text-xs font-extrabold px-3.5 py-1.5 rounded-full uppercase tracking-wider">Financial Impact Analysis</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold mt-3 mb-4">
+                    What is the True Cost of Remaining Uninsured?
+                </h2>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                    With rooftop installations representing significant lacs of investment, unexpected disasters like severe storms, lightning surges, or electrical fires can wipe out your investment instantly. Here is why you need comprehensive protection.
+                </p>
+            </div>
+            
+            <!-- Mid-Page Hook CTA Box -->
+            <div class="bg-gradient-to-br from-brand-900 to-blue-950 border border-blue-500/30 rounded-3xl p-8 max-w-4xl mx-auto text-center space-y-6 shadow-2xl">
+                <span class="text-orange-400 text-xs font-bold uppercase tracking-widest bg-orange-500/10 px-3 py-1 rounded-full border border-orange-500/20">🛡️ Instant Protection Available</span>
+                <h3 class="text-2xl sm:text-3xl font-extrabold">Don't Leave Your Solar Asset Unprotected to Nature's Fury!</h3>
+                <p class="text-slate-300 text-sm max-w-xl mx-auto">Get comprehensive coverage against 15+ risks starting with easy documentation. Talk to our advisors or secure your plant instantly.</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="#checkout-section" class="bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-3.5 rounded-xl shadow-lg transition text-sm">
+                        Calculate & Pay Now
+                    </a>
+                    <a href="https://wa.me/918905212389?text=Hello%2C%20I%20want%20expert%20guidance%20on%20solar%20insurance%20coverage." target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-8 py-3.5 rounded-xl shadow-lg transition text-sm flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp"></i> Chat with Expert
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOLAR VENDORS & BULK CASHBACK OFFER SECTION -->
+    <section id="vendor-section" class="py-20 bg-gradient-to-br from-orange-500 via-amber-500 to-orange-600 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 bg-white/20 text-white px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-widest border border-white/35">
+                        <i class="fa-solid fa-handshake"></i> Solar Partner Program
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight">
+                        Grow Your Business & Sell More Projects by Offering <span class="text-brand-900 underline decoration-white">Solar Insurance</span>
+                    </h2>
+                    <p class="text-base sm:text-lg text-white font-medium leading-relaxed opacity-95">
+                        Grow your business or sell more projects by offering solar insurance to your customers. This will give you ultimate peace of mind as well as complete protection to your customer!
+                    </p>
+                    <div class="bg-brand-900/40 backdrop-blur-md p-6 rounded-2xl border border-white/20 space-y-3">
+                        <h4 class="text-lg font-bold text-white flex items-center gap-2">
+                            <i class="fa-solid fa-gifts text-yellow-300"></i> Exclusive Bulk Insurance & Cashback Offer for Vendors
+                        </h4>
+                        <p class="text-sm text-slate-100 leading-relaxed">
+                            Are you a solar EPC, installer, or distributor handling bulk installations? Contact us today for <strong>customized vendor offers, special premium pricing, and attractive cash back benefits</strong> for bulk project insurance!
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-4 pt-2">
+                        <a href="https://wa.me/918905212389?text=Hello%2C%20I%20am%20a%20Solar%20Vendor%20interested%20in%20Bulk%20Insurance%20and%20Cashback%20Offers." target="_blank" class="bg-brand-900 hover:bg-brand-600 text-white font-bold px-8 py-4 rounded-xl shadow-2xl transition flex items-center gap-2 text-base">
+                            <i class="fa-brands fa-whatsapp text-emerald-400 text-xl"></i> Partner with Us on WhatsApp
+                        </a>
+                        <a href="tel:8905212389" class="bg-white text-brand-900 hover:bg-slate-100 font-bold px-8 py-4 rounded-xl shadow-2xl transition flex items-center gap-2 text-base">
+                            <i class="fa-solid fa-phone text-orange-500"></i> Call Partner Desk
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5">
+                    <div class="bg-white text-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-100 space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-orange-100 text-orange-600 flex items-center justify-center text-2xl font-bold">
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </div>
+                        <h3 class="text-2xl font-extrabold text-brand-900">Vendor Bulk Inquiry</h3>
+                        <p class="text-xs text-slate-500">Register your solar company details to claim customized bulk pricing and cashback rewards.</p>
+                        
+                        <form action="https://formsubmit.co/solarinsurance.in@gmail.com" method="POST" onsubmit="alert('Thank you! Vendor inquiry submitted successfully. Our partnership team will contact you shortly.');" class="space-y-3">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Company / Vendor Name *</label>
+                                <input type="text" name="vendor_company" required placeholder="Enter your business name" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-600">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Contact Person *</label>
+                                <input type="text" name="vendor_contact_person" required placeholder="Your name" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-600">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Mobile Number (WhatsApp) *</label>
+                                <input type="tel" name="vendor_phone" required placeholder="10-digit mobile number" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-600">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Average Monthly Installations</label>
+                                <select name="monthly_installations" class="w-full px-3 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-600">
+                                    <option>1 - 5 Projects / Month</option>
+                                    <option>5 - 20 Projects / Month</option>
+                                    <option>20 - 50 Projects / Month</option>
+                                    <option>50+ Projects / Month (Bulk)</option>
+                                </select>
+                            </div>
+                            <input type="hidden" name="_subject" value="New Vendor Bulk Insurance Inquiry & Cashback Request!">
+                            <input type="hidden" name="_captcha" value="false">
+                            <button type="submit" class="w-full bg-brand-900 hover:bg-brand-600 text-white font-bold py-3.5 rounded-xl shadow-lg transition flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-paper-plane text-orange-400"></i> Request Bulk Cashback Quote
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAST CLAIMS PROCESS -->
+    <section id="claims" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="bg-orange-100 text-orange-800 text-xs font-extrabold px-3.5 py-1.5 rounded-full uppercase tracking-wider">Fast & Transparent</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-brand-900 mt-3 mb-4">
+                    Minimal Documentation & Highest Claim Process
+                </h2>
+                <p class="text-slate-600 text-sm sm:text-base">
+                    We combine paperless onboarding and instant UTR reconciliation with a rigorous, customer-first 4-step claim settlement procedure.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="text-center p-6 bg-slate-50 rounded-2xl border border-slate-100">
+                    <div class="w-12 h-12 bg-brand-900 text-white rounded-xl mx-auto flex items-center justify-center font-bold text-lg mb-4 shadow-md">1</div>
+                    <h3 class="font-bold text-brand-900 text-lg mb-2">Intimate Us</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Report the claim immediately via toll-free support or online portal.</p>
+                </div>
+                <div class="text-center p-6 bg-slate-50 rounded-2xl border border-slate-100">
+                    <div class="w-12 h-12 bg-brand-900 text-white rounded-xl mx-auto flex items-center justify-center font-bold text-lg mb-4 shadow-md">2</div>
+                    <h3 class="font-bold text-brand-900 text-lg mb-2">Video Assessment</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Tech-based surveyor allocation within 24 hours and video verification for smaller claims.</p>
+                </div>
+                <div class="text-center p-6 bg-slate-50 rounded-2xl border border-slate-100">
+                    <div class="w-12 h-12 bg-brand-900 text-white rounded-xl mx-auto flex items-center justify-center font-bold text-lg mb-4 shadow-md">3</div>
+                    <h3 class="font-bold text-brand-900 text-lg mb-2">Document Submission</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Submit signed discharge voucher, repair invoices, or survey report smoothly.</p>
+                </div>
+                <div class="text-center p-6 bg-slate-50 rounded-2xl border border-slate-100">
+                    <div class="w-12 h-12 bg-brand-900 text-white rounded-xl mx-auto flex items-center justify-center font-bold text-lg mb-4 shadow-md">4</div>
+                    <h3 class="font-bold text-brand-900 text-lg mb-2">Quick Settlement</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Fast payout transferred directly to your bank account upon voucher approval.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQS SECTION (All 32 FAQs Included) -->
+    <section id="faqs" class="py-20 bg-slate-100">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="bg-blue-200 text-brand-900 text-xs font-extrabold px-3.5 py-1.5 rounded-full uppercase tracking-wider">Complete Knowledge Base</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-brand-900 mt-3 mb-4">
+                    Solar Insurance – Frequently Asked Questions
+                </h2>
+                <p class="text-slate-600 text-sm sm:text-base">
+                    Comprehensive answers to every question regarding rooftop solar coverage, PM Surya Ghar integration, claims, documentation, and pricing.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-base font-bold text-brand-900 mb-2"><i class="fa-solid fa-circle-question text-orange-500 mr-2"></i> 1. What is Solar Insurance?</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed pl-6">Solar Insurance helps protect your rooftop solar investment against financial loss arising from accidental and unforeseen events covered under a suitable insurance policy. Depending on the policy and coverage selected, protection may be available against risks such as fire, lightning, storm, cyclone, flood, earthquake and other covered perils.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-base font-bold text-brand-900 mb-2"><i class="fa-solid fa-circle-question text-orange-500 mr-2"></i> 2. Can Solar Panels Be Covered Under Home Insurance Under the Home Building or Home Contents Section?</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed pl-6">Yes. Solar panels and rooftop solar systems may be covered under a home insurance policy under the Home Building or Home Contents section, depending on the nature, installation and structure of the asset. Since a rooftop solar system is generally fixed or permanently attached to the building structure, it may be considered for coverage under the Home Building section.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-base font-bold text-brand-900 mb-2"><i class="fa-solid fa-circle-question text-orange-500 mr-2"></i> 3. Who Can Buy Solar Insurance?</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed pl-6">Homeowners with a rooftop solar system installed at their residential property may apply for Solar Insurance, subject to eligibility, underwriting requirements and applicable policy terms.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-base font-bold text-brand-900 mb-2"><i class="fa-solid fa-circle-question text-orange-500 mr-2"></i> 4. Can I Insure My PM Surya Ghar Solar System?</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed pl-6">Yes. A rooftop solar system installed under the PM Surya Ghar: Muft Bijli Yojana may be considered for insurance, subject to eligibility, underwriting requirements and applicable policy terms and conditions.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-base font-bold text-brand-900 mb-2"><i class="fa-solid fa-circle-question text-orange-500 mr-2"></i> 5. What Can Be Covered Under Solar Insurance?</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed pl-6">Solar Panels, Solar Inverter, Mounting Structure, Cables and Electrical Equipment, and other declared solar system components or eligible fixed equipment at the insured home.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-base font-bold text-brand-900 mb-2"><i class="fa-solid fa-circle-question text-orange-500 mr-2"></i> 6. What Risks Can Be Covered Under Solar Insurance?</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed pl-6">Fire, Explosion or Implosion, Lightning, Storm and Cyclone, Typhoon, Tempest, Hurricane and Tornado, Flood and Inundation, Earthquake, Riot and Malicious Damage.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-base font-bold text-brand-900 mb-2"><i class="fa-solid fa-circle-question text-orange-500 mr-2"></i> 7. Is Storm or Cyclone Damage to Solar Panels Covered?</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed pl-6">Loss or damage caused by an insured event such as a storm or cyclone may be covered, subject to the policy terms, conditions, exclusions and coverage selected.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-base font-bold text-brand-900 mb-2"><i class="fa-solid fa-circle-question text-orange-500 mr-2"></i> 8. Is Flood Damage to My Solar System Covered?</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed pl-6">Loss or damage caused due to flood or inundation may be covered depending on the selected insurance coverage and applicable policy terms.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-base font-bold text-brand-900 mb-2"><i class="fa-solid fa-circle-question text-orange-500 mr-2"></i> 9. Is Lightning Damage to Solar Panels Covered?</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed pl-6">Damage caused due to lightning may be covered under the policy, subject to the selected coverage, policy terms and circumstances of the loss.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-base font-bold text-brand-900 mb-2"><i class="fa-solid fa-circle-question text-orange-500 mr-2"></i> 10. Is Fire Damage to My Solar System Covered?</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed pl-6">Loss or damage caused due to fire may be covered under the applicable insurance policy, subject to the policy terms, conditions, exclusions and policy schedule.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-base font-bold text-brand-900 mb-2"><i class="fa-solid fa-circle-question text-orange-500 mr-2"></i> 11. Does Solar Insurance Cover the Solar Inverter?</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed pl-6">The solar inverter and other solar equipment may be considered for coverage depending on the assets declared, their classification, the selected policy coverage and policy schedule.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-base font-bold text-brand-900 mb-2"><i class="fa-solid fa-circle-question text-orange-500 mr-2"></i> 12. Does Solar Insurance Cover the Complete Solar System?</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed pl-6">Coverage of the complete solar system depends on the assets declared and insured under the policy.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-base font-bold text-brand-900 mb-2"><i class="fa-solid fa-circle-question text-orange-500 mr-2"></i> 13. What Documents Are Required to Apply for Solar Insurance?</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed pl-6">Aadhaar Card, PAN Card, and either Solar System Invoice OR Exact Risk Location along with PIN Code.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-base font-bold text-brand-900 mb-2"><i class="fa-solid fa-circle-question text-orange-500 mr-2"></i> 14. Do I Need to Submit the Solar Installation Invoice?</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed pl-6">If available, the solar installation invoice can be submitted to help establish value. Alternatively, you may provide the exact address and PIN Code where the system is installed.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-base font-bold text-brand-900 mb-2"><i class="fa-solid fa-circle-question text-orange-500 mr-2"></i> 15. What Is the Risk Location for Solar Insurance?</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed pl-6">The risk location is the exact address (House/Flat, Street, City, State, PIN Code) where your rooftop solar system is physically installed.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-base font-bold text-brand-900 mb-2"><i class="fa-solid fa-circle-question text-orange-500 mr-2"></i> 16. Why Is the PIN Code Required?</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed pl-6">The PIN Code helps identify the exact location where the solar system is installed and is required for risk assessment, policy processing and verification.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-base font-bold text-brand-900 mb-2"><i class="fa-solid fa-circle-question text-orange-500 mr-2"></i> 17. Can I Insure an Existing Rooftop Solar System?</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed pl-6">Yes, existing rooftop solar systems may be considered for insurance, subject to eligibility criteria, underwriting requirements and acceptance.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-base font-bold text-brand-900 mb-2"><i class="fa-solid fa-circle-question text-orange-500 mr-2"></i> 18. How Is the Sum Insured for My Solar System Decided?</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed pl-6">The sum insured should appropriately reflect the value of the solar system or assets being insured, determined via invoices and system valuations.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-base font-bold text-brand-900 mb-2"><i class="fa-solid fa-circle-question text-orange-500 mr-2"></i> 19. How Much Does Solar Insurance Cost?</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed pl-6">Premium depends on system value, risk location, PIN code, coverage selected, policy period, and underwriting requirements (starting from ₹500 as per our matrix).</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-base font-bold text-brand-900 mb-2"><i class="fa-solid fa-circle-question text-orange-500 mr-2"></i> 20. Is Solar Insurance Different from a Solar Panel Warranty?</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed pl-6">Yes. Manufacturer warranty covers specified manufacturing or performance issues, while Solar Insurance protects against unforeseen physical loss or damage caused by covered risks.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-base font-bold text-brand-900 mb-2"><i class="fa-solid fa-circle-question text-orange-500 mr-2"></i> 21. Does Solar Insurance Cover Normal Wear and Tear?</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed pl-6">Normal wear and tear, gradual deterioration and natural ageing are generally not considered sudden physical damage and are subject to policy exclusions.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-base font-bold text-brand-900 mb-2"><i class="fa-solid fa-circle-question text-orange-500 mr-2"></i> 22. Does Solar Insurance Cover Reduced Power Generation?</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed pl-6">Solar Insurance is not a replacement for a performance warranty. Normal degradation or performance reduction does not constitute an insured loss.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-base font-bold text-brand-900 mb-2"><i class="fa-solid fa-circle-question text-orange-500 mr-2"></i> 23. Can I Buy Solar Insurance Online?</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed pl-6">Yes. You can submit basic details and minimal required documents online for assistance with your insurance application and payment reconciliation.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-base font-bold text-brand-900 mb-2"><i class="fa-solid fa-circle-question text-orange-500 mr-2"></i> 24. How Long Does It Take to Get a Solar Insurance Policy?</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed pl-6">Policy issuance depends on information completeness, document verification, underwriting requirements, and premium payment via UTR reconciliation.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-base font-bold text-brand-900 mb-2"><i class="fa-solid fa-circle-question text-orange-500 mr-2"></i> 25. Is a Site Inspection Required Before Buying Solar Insurance?</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed pl-6">Inspection requirements depend on risk nature, property details, and underwriting guidelines. Not every application requires physical verification.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-base font-bold text-brand-900 mb-2"><i class="fa-solid fa-circle-question text-orange-500 mr-2"></i> 26. What Should I Do If My Solar System Gets Damaged?</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed pl-6">Inform the insurer immediately, take safe photographs/videos, prevent further loss, do not dispose of damaged equipment prematurely, and submit required claim documents.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-base font-bold text-brand-900 mb-2"><i class="fa-solid fa-circle-question text-orange-500 mr-2"></i> 27. What Documents May Be Required During a Solar Insurance Claim?</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed pl-6">Claim Form, Policy Details, Damage Photos/Videos, Repair Estimates, Invoices, Purchase/Installation Documents, and FIR/Police reports where applicable.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-base font-bold text-brand-900 mb-2"><i class="fa-solid fa-circle-question text-orange-500 mr-2"></i> 28. Can I Insure More Than One Solar System?</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed pl-6">Yes, if systems are installed at multiple residential locations, each system and risk location must be separately declared with exact PIN codes.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-base font-bold text-brand-900 mb-2"><i class="fa-solid fa-circle-question text-orange-500 mr-2"></i> 29. Can I Renew My Solar Insurance?</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed pl-6">Yes. Insurance protection may generally be continued through annual or long-term renewal, subject to underwriting terms.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-base font-bold text-brand-900 mb-2"><i class="fa-solid fa-circle-question text-orange-500 mr-2"></i> 30. Is Long-Term Solar Insurance Coverage Available?</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed pl-6">Long-term policy options (up to 5 years) may be available depending on the selected insurance product and applicable terms.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-base font-bold text-brand-900 mb-2"><i class="fa-solid fa-circle-question text-orange-500 mr-2"></i> 31. Why Should I Choose Solar Insurance?</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed pl-6">Rooftop solar is a long-term investment. Unforeseen perils like fire, lightning, and storms can cause severe financial damage. Solar Insurance provides an essential financial safety net.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-base font-bold text-brand-900 mb-2"><i class="fa-solid fa-circle-question text-orange-500 mr-2"></i> 32. Is Home Building & Contents Covered?</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed pl-6">Yes, policies combine building structure, household contents, and permanent solar installations into one policy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TWO-PART INTERACTIVE CHECKOUT SECTION -->
+    <section id="checkout-section" class="py-16 sm:py-20 bg-white border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-50 border border-slate-200 rounded-3xl p-6 sm:p-12 shadow-2xl">
+                <div class="text-center max-w-xl mx-auto mb-8 sm:mb-10">
+                    <span class="bg-orange-100 text-orange-800 text-xs font-extrabold px-3.5 py-1.5 rounded-full uppercase tracking-wider">Two-Part Interactive Checkout</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-900 mt-3 mb-2">Select Coverage, Agree & Choose Your Path</h2>
+                    <p class="text-slate-600 text-xs sm:text-sm">Fill in your details, agree to the calculated premium, and choose whether to consult with our advisor first or pay immediately via UPI.</p>
+                </div>
+
+                <!-- Two-Part Interactive Checkout Form -->
+                <form id="checkout-form" class="space-y-5 sm:space-y-6">
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Full Name *</label>
+                            <input type="text" id="c-name" required placeholder="Enter your full name" class="w-full px-4 py-3 bg-white border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-blue-600 focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Mobile Number (WhatsApp) *</label>
+                            <input type="tel" id="c-phone" required placeholder="10-digit mobile number" class="w-full px-4 py-3 bg-white border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-blue-600 focus:outline-none">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Coverage Type *</label>
+                            <select id="c-coverage-type" required class="w-full px-4 py-3 bg-white border border-slate-300 rounded-xl text-xs sm:text-sm focus:ring-2 focus:ring-blue-600 focus:outline-none">
+                                <option value="" disabled selected>Choose coverage type...</option>
+                                <option value="Home Building Including Solar">Home Building Including Solar</option>
+                                <option value="Home Content including Solar">Home Content including Solar</option>
+                                <option value="Only Solar">Only Solar</option>
+                                <option value="Home Building + Home Content Including Solar">Home Building + Home Content Including Solar</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Coverage Tier *</label>
+                            <select id="c-tier" required onchange="calculatePremium()" class="w-full px-4 py-3 bg-white border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-blue-600 focus:outline-none font-bold text-brand-900">
+                                <option value="5" selected>5 Lacs Coverage</option>
+                                <option value="10">10 Lacs Coverage</option>
+                                <option value="15">15 Lacs Coverage</option>
+                                <option value="20">20 Lacs Coverage</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Policy Tenure *</label>
+                            <select id="c-tenure" required onchange="calculatePremium()" class="w-full px-4 py-3 bg-white border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-blue-600 focus:outline-none font-bold text-brand-900">
+                                <option value="1">1 Year</option>
+                                <option value="2">2 Years</option>
+                                <option value="3">3 Years</option>
+                                <option value="4">4 Years</option>
+                                <option value="5" selected>5 Years</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Live Calculated Premium Display Box -->
+                    <div class="bg-gradient-to-r from-orange-500 to-amber-500 text-white p-5 sm:p-6 rounded-2xl flex flex-col sm:flex-row justify-between items-center shadow-md gap-3">
+                        <div>
+                            <span class="text-xs uppercase tracking-wider font-bold opacity-90">Calculated Premium Amount</span>
+                            <div class="text-2xl sm:text-3xl font-black mt-0.5" id="display-premium">₹1,700</div>
+                        </div>
+                        <div class="text-xs text-center sm:text-right opacity-90">
+                            Based on selected Tenure & Coverage Tier.<br>For &gt;20 Lacs, please contact expert.
+                        </div>
+                    </div>
+
+                    <!-- Agreement Checkbox -->
+                    <div class="bg-blue-50 border border-blue-200 p-4 rounded-2xl flex items-start gap-3">
+                        <input type="checkbox" id="agree-checkbox" required class="mt-1 w-4 h-4 text-blue-600 rounded border-gray-300 focus:ring-blue-500">
+                        <label for="agree-checkbox" class="text-xs sm:text-sm text-brand-900 font-medium leading-relaxed">
+                            I agree to the calculated premium amount, terms, and conditions of Solar Insurance India.
+                        </label>
+                    </div>
+
+                    <!-- Two-Part Action Choice Buttons -->
+                    <div id="choice-buttons-box" class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <!-- Option 1: Consult with Advisor -->
+                        <button type="button" onclick="handleConsultation()" class="py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl shadow-lg transition flex items-center justify-center gap-2 text-sm sm:text-base">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> After Consultation with Insurance Advisor
+                        </button>
+
+                        <!-- Option 2: Pay Now via UPI QR -->
+                        <button type="button" onclick="handlePayNow()" class="py-4 bg-brand-900 hover:bg-brand-600 text-white font-bold rounded-xl shadow-lg transition flex items-center justify-center gap-2 text-sm sm:text-base">
+                            <i class="fa-solid fa-qrcode text-orange-400"></i> Pay Now via UPI QR Code
+                        </button>
+                    </div>
+
+                    <!-- Hidden Payment & QR Section -->
+                    <div id="upi-payment-box" class="hidden bg-white border-2 border-orange-400 rounded-2xl p-5 sm:p-8 space-y-5 sm:space-y-6">
+                        <div class="text-center bg-orange-50 p-4 rounded-xl border border-orange-200">
+                            <h3 class="font-extrabold text-brand-900 text-sm sm:text-base mb-1"><i class="fa-solid fa-qrcode text-orange-500 mr-2"></i> Scan Dynamic QR Code to Pay</h3>
+                            <p class="text-xs text-slate-600">Scan the exact amount QR code below via any UPI App, then submit your UTR reference.</p>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8 pt-2">
+                            <div class="bg-white p-3 border-2 border-slate-300 rounded-2xl shadow-sm text-center">
+                                <div id="dynamic-qr-container" class="w-48 h-48 flex items-center justify-center mx-auto bg-white p-2 rounded-xl border border-slate-300 shadow-sm"></div>
+                                <span class="text-xs text-slate-700 font-extrabold mt-3 block">Wattscore Energy</span>
+                            </div>
+
+                            <div class="space-y-3 text-center sm:text-left">
+                                <div class="bg-slate-50 p-4 sm:p-5 rounded-xl border border-slate-200">
+                                    <span class="text-xs text-slate-500 block font-bold uppercase mb-1">Beneficiary Name</span>
+                                    <span class="text-base sm:text-lg font-black text-brand-900">Wattscore Energy</span>
+                                </div>
+                                <div class="bg-slate-50 p-4 sm:p-5 rounded-xl border border-slate-200">
+                                    <span class="text-xs text-slate-500 block font-bold uppercase mb-1">UPI ID</span>
+                                    <span class="text-sm font-black text-brand-900 select-all">itsajayadav@oksbi</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="border-slate-200">
+
+                        <div class="space-y-3">
+                            <h4 class="font-bold text-brand-900 text-sm flex items-center gap-2">
+                                <i class="fa-solid fa-receipt text-orange-500"></i> Enter Payment UTR / Transaction Reference ID
+                            </h4>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">UTR / UPI Reference Number *</label>
+                                <input type="text" id="c-utr" placeholder="e.g. 432198765432" class="w-full px-4 py-3 bg-white border border-slate-300 rounded-xl text-sm font-semibold tracking-wide focus:ring-2 focus:ring-emerald-600 focus:outline-none">
+                            </div>
+                        </div>
+
+                        <div class="text-center pt-2">
+                            <button type="button" onclick="handlePaymentSubmission()" class="w-full py-4 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-bold rounded-xl shadow-lg transition flex items-center justify-center gap-2 text-sm sm:text-base">
+                                <i class="fa-solid fa-circle-check text-yellow-300"></i> Submit UTR & Request Policy Issuance via WhatsApp
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-900 text-white pt-12 sm:pt-16 pb-10 sm:pb-12 border-t border-blue-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 mb-10 sm:mb-12">
+                <div class="space-y-3">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-orange-500 flex items-center justify-center text-white font-bold">
+                            <i class="fa-solid fa-shield-halved text-xl"></i>
+                        </div>
+                        <span class="text-lg font-extrabold tracking-tight">SOLAR INSURANCE INDIA</span>
+                    </div>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Protect Today, Power Tomorrow. Specialised comprehensive home and rooftop solar asset protection solutions aligned with national clean energy initiatives.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-sm font-bold uppercase tracking-wider text-orange-400 mb-3">Quick Links</h4>
+                    <ul class="space-y-2 text-xs text-slate-300">
+                        <li><a href="#overview" class="hover:text-white transition">Overview & Highlights</a></li>
+                        <li><a href="#why-choose" class="hover:text-white transition">Why Choose Us</a></li>
+                        <li><a href="#surya-ghar" class="hover:text-white transition">PM Surya Ghar Yojana</a></li>
+                        <li><a href="#vendor-section" class="hover:text-white transition">For Solar Vendors</a></li>
+                        <li><a href="#faqs" class="hover:text-white transition">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-sm font-bold uppercase tracking-wider text-orange-400 mb-3">Contact Details</h4>
+                    <ul class="space-y-2.5 text-xs text-slate-300">
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-phone text-orange-400"></i>
+                            <div class="flex flex-col">
+                                <a href="tel:8905212389" class="hover:text-white font-semibold">8905212389</a>
+                                <a href="tel:9119321238" class="hover:text-white font-semibold">9119321238</a>
+                            </div>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-envelope text-orange-400"></i>
+                            <a href="mailto:solarinsurance.in@gmail.com" class="hover:text-white font-semibold">solarinsurance.in@gmail.com</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-globe text-orange-400"></i>
+                            <a href="https://www.solarinsurance.co.in" target="_blank" class="hover:text-white font-semibold">www.solarinsurance.co.in</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-sm font-bold uppercase tracking-wider text-orange-400 mb-3">WhatsApp Inquiry</h4>
+                    <p class="text-xs text-slate-300 mb-3">Chat instantly with our advisory team for immediate quote assistance.</p>
+                    <a href="https://wa.me/918905212389?text=Hello%2C%20I%20want%20to%20know%20more%20about%20Complete%20Home%20and%20Solar%20Insurance." target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs px-4 py-3 rounded-xl shadow-md transition">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <div class="pt-6 border-t border-slate-800 text-center text-[11px] text-slate-500 space-y-2">
+                <p>
+                    <strong>Marketing Disclaimer:</strong> This brochure is an awareness and marketing communication summarizing the Complete Home Protect Policy features (including ICICI Lombard framework). Coverage, terms, conditions, deductibles, and claims are governed by actual insurer policy wording. Solar Insurance India operates as an authorised advisory partner.
+                </p>
+                <p>&copy; 2026 Solar Insurance India. All rights reserved. Protect Today, Power Tomorrow.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Handling Two-Part Dual Submission (Email + WhatsApp) -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        const premiumTable = {
+            1: { 5: 500, 10: 600, 15: 900, 20: 1200 },
+            2: { 5: 800, 10: 950, 15: 1500, 20: 1900 },
+            3: { 5: 1200, 10: 1500, 15: 2200, 20: 2900 },
+            4: { 5: 1400, 10: 1700, 15: 2500, 20: 3400 },
+            5: { 5: 1700, 10: 2000, 15: 3000, 20: 4100 }
+        };
+
+        function calculatePremium() {
+            const tenure = document.getElementById('c-tenure').value;
+            const tier = document.getElementById('c-tier').value;
+            const amount = premiumTable[tenure] ? premiumTable[tenure][tier] : 1700;
+            const formatted = '₹' + amount.toLocaleString('en-IN');
+            document.getElementById('display-premium').innerText = formatted;
+
+            const upiString = 'upi://pay?pa=itsajayadav@oksbi&pn=Wattscore%20Energy&am=' + amount + '&cu=INR';
+            const qrApiUrl = 'https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=' + encodeURIComponent(upiString);
+            document.getElementById('dynamic-qr-container').innerHTML = '<img src="' + qrApiUrl + '" alt="Dynamic UPI QR Code" class="w-40 h-40 object-contain rounded-lg mx-auto block">';
+        }
+
+        window.addEventListener('DOMContentLoaded', () => { calculatePremium(); });
+
+        function validateForm() {
+            const name = document.getElementById('c-name').value;
+            const phone = document.getElementById('c-phone').value;
+            const coverage = document.getElementById('c-coverage-type').value;
+            const agree = document.getElementById('agree-checkbox').checked;
+
+            if (!name || !phone || !coverage) {
+                alert('Please fill in your Full Name, Mobile Number, and Coverage Type.');
+                document.getElementById('c-name').focus();
+                return false;
+            }
+            if (!agree) {
+                alert('Please check the box to agree to the calculated premium amount and terms.');
+                document.getElementById('agree-checkbox').focus();
+                return false;
+            }
+            return true;
+        }
+
+        // Send Email via FormSubmit AJAX API
+        function sendEmailToVendor(subject, bodyData) {
+            const formData = new FormData();
+            formData.append('name', bodyData.name);
+            formData.append('phone', bodyData.phone);
+            formData.append('property_type', bodyData.coverage);
+            formData.append('coverage_tier', bodyData.tier + ' Lacs');
+            formData.append('tenure', bodyData.tenure + ' Years');
+            formData.append('calculated_premium', bodyData.premium);
+            if(bodyData.utr) formData.append('utr_transaction_id', bodyData.utr);
+            formData.append('_subject', subject);
+            formData.append('_captcha', 'false');
+
+            fetch('https://formsubmit.co/ajax/solarinsurance.in@gmail.com', {
+                method: 'POST',
+                body: formData
+            }).catch(err => console.log('Email sent successfully'));
+        }
+
+        // Quick Quote Lead Notification (Hero section)
+        function sendWhatsAppLead(e, type) {
+            let name, phone, propertyType, details;
+
+            if (type === 'quick') {
+                name = document.getElementById('q-name').value;
+                phone = document.getElementById('q-phone').value;
+                propertyType = document.getElementById('q-property').value;
+                details = 'Property: ' + propertyType;
+            }
+
+            const whatsappNumber = "918905212389";
+            const waText = 'New Insurance Inquiry!\n*Name:* ' + name + '\n*Phone:* ' + phone + '\n*Details:* ' + details;
+            window.open('https://wa.me/' + whatsappNumber + '?text=' + encodeURIComponent(waText), '_blank');
+        }
+
+        // Option 1: Consultation (Sends Email via AJAX + Force WhatsApp Redirect)
+        function handleConsultation() {
+            if (!validateForm()) return;
+
+            const name = document.getElementById('c-name').value;
+            const phone = document.getElementById('c-phone').value;
+            const coverage = document.getElementById('c-coverage-type').value;
+            const tier = document.getElementById('c-tier').value;
+            const tenure = document.getElementById('c-tenure').value;
+            const premium = document.getElementById('display-premium').innerText;
+
+            sendEmailToVendor("Consultation Requested - Solar Insurance India", {name, phone, coverage, tier, tenure, premium});
+
+            const waText = 'Hello, I want the consultation about solar insurance!\n*Name:* ' + name + '\n*Phone:* ' + phone + '\n*Coverage:* ' + coverage + ' (' + tier + ' Lacs, ' + tenure + ' Yrs)\n*Premium:* ' + premium;
+            
+            window.location.href = 'https://wa.me/918905212389?text=' + encodeURIComponent(waText);
+        }
+
+        // Option 2: Pay Now (Reveals QR Code)
+        function handlePayNow() {
+            if (!validateForm()) return;
+            document.getElementById('upi-payment-box').classList.remove('hidden');
+            document.getElementById('choice-buttons-box').classList.add('hidden');
+            document.getElementById('upi-payment-box').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Option 2 Submission: UTR & Policy Request (Sends Email via AJAX + Force WhatsApp Redirect)
+        function handlePaymentSubmission() {
+            const utr = document.getElementById('c-utr').value;
+            if (!utr) {
+                alert('Please enter your UTR / Transaction Reference Number.');
+                document.getElementById('c-utr').focus();
+                return;
+            }
+
+            const name = document.getElementById('c-name').value;
+            const phone = document.getElementById('c-phone').value;
+            const coverage = document.getElementById('c-coverage-type').value;
+            const tier = document.getElementById('c-tier').value;
+            const tenure = document.getElementById('c-tenure').value;
+            const premium = document.getElementById('display-premium').innerText;
+
+            sendEmailToVendor("Payment UTR Submitted - Solar Insurance India", {name, phone, coverage, tier, tenure, premium, utr});
+
+            const waText = 'I made a payment for the solar insurance. Please issue the policy !!\n*Name:* ' + name + '\n*Phone:* ' + phone + '\n*Coverage:* ' + coverage + ' (' + tier + ' Lacs, ' + tenure + ' Yrs)\n*Premium:* ' + premium + '\n*UTR No:* ' + utr;
+            
+            window.location.href = 'https://wa.me/918905212389?text=' + encodeURIComponent(waText);
+        }
+    </script>
+</body>
+</html>
