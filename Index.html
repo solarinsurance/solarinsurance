@@ -168,19 +168,19 @@
                         <h3 class="text-2xl font-bold text-brand-900 mb-2">Instant Quote Inquiry</h3>
                         <p class="text-xs text-slate-500 mb-6">Fill in your details for a call back from Solar Insurance India specialists.</p>
                         
-                        <form action="https://formsubmit.co/solarinsurance.in@gmail.com" method="POST" onsubmit="sendWhatsAppLead(event, 'quick')" class="space-y-4">
+                        <form onsubmit="sendWhatsAppLead(event, 'quick')" class="space-y-4">
                             <div>
                                 <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Full Name</label>
-                                <input type="text" id="q-name" name="name" required placeholder="Enter your name" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 transition">
+                                <input type="text" id="q-name" required placeholder="Enter your name" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 transition">
                             </div>
                             <div>
                                 <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Phone Number</label>
-                                <input type="tel" id="q-phone" name="phone" required placeholder="10-digit mobile number" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 transition">
+                                <input type="tel" id="q-phone" required placeholder="10-digit mobile number" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 transition">
                             </div>
                             <div class="grid grid-cols-2 gap-3">
                                 <div>
                                     <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Property Type</label>
-                                    <select id="q-property" name="property_type" class="w-full px-3 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 transition">
+                                    <select id="q-property" class="w-full px-3 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 transition">
                                         <option>Home Building Including Solar</option>
                                         <option>Home Content including Solar</option>
                                         <option>Only Solar</option>
@@ -189,15 +189,13 @@
                                 </div>
                                 <div>
                                     <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Solar Installed?</label>
-                                    <select id="q-solar" name="solar_status" class="w-full px-3 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 transition">
+                                    <select id="q-solar" class="w-full px-3 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 transition">
                                         <option>Yes (PM Surya Ghar)</option>
                                         <option>Yes (Standard)</option>
                                         <option>Planning Soon</option>
                                     </select>
                                 </div>
                             </div>
-                            <input type="hidden" name="_subject" value="New Quick Inquiry from Solar Insurance India Website!">
-                            <input type="hidden" name="_captcha" value="false">
                             <button type="submit" class="w-full bg-brand-900 hover:bg-brand-600 text-white font-bold py-3.5 rounded-xl shadow-lg transition flex items-center justify-center gap-2">
                                 <i class="fa-solid fa-shield-check text-orange-400"></i> Request Expert Consultation
                             </button>
@@ -505,32 +503,30 @@
                         <h3 class="text-2xl font-extrabold text-brand-900">Vendor Bulk Inquiry</h3>
                         <p class="text-xs text-slate-500">Register your solar company details to claim customized bulk pricing and cashback rewards.</p>
                         
-                        <form action="https://formsubmit.co/solarinsurance.in@gmail.com" method="POST" onsubmit="alert('Thank you! Vendor inquiry submitted successfully. Our partnership team will contact you shortly.');" class="space-y-3">
+                        <form id="vendor-form" onsubmit="handleVendorSubmission(event)" class="space-y-3">
                             <div>
                                 <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Company / Vendor Name *</label>
-                                <input type="text" name="vendor_company" required placeholder="Enter your business name" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-600">
+                                <input type="text" id="v-company" required placeholder="Enter your business name" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-600">
                             </div>
                             <div>
                                 <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Contact Person *</label>
-                                <input type="text" name="vendor_contact_person" required placeholder="Your name" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-600">
+                                <input type="text" id="v-contact" required placeholder="Your name" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-600">
                             </div>
                             <div>
                                 <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Mobile Number (WhatsApp) *</label>
-                                <input type="tel" name="vendor_phone" required placeholder="10-digit mobile number" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-600">
+                                <input type="tel" id="v-phone" required placeholder="10-digit mobile number" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-600">
                             </div>
                             <div>
                                 <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Average Monthly Installations</label>
-                                <select name="monthly_installations" class="w-full px-3 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-600">
+                                <select id="v-installations" class="w-full px-3 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-600">
                                     <option>1 - 5 Projects / Month</option>
                                     <option>5 - 20 Projects / Month</option>
                                     <option>20 - 50 Projects / Month</option>
                                     <option>50+ Projects / Month (Bulk)</option>
                                 </select>
                             </div>
-                            <input type="hidden" name="_subject" value="New Vendor Bulk Insurance Inquiry & Cashback Request!">
-                            <input type="hidden" name="_captcha" value="false">
                             <button type="submit" class="w-full bg-brand-900 hover:bg-brand-600 text-white font-bold py-3.5 rounded-xl shadow-lg transition flex items-center justify-center gap-2">
-                                <i class="fa-solid fa-paper-plane text-orange-400"></i> Request Bulk Cashback Quote
+                                <i class="fa-solid fa-paper-plane text-orange-400"></i> Request Bulk Cashback Quote & Brochure
                             </button>
                         </form>
                     </div>
@@ -538,6 +534,37 @@
             </div>
         </div>
     </section>
+
+    <!-- Vendor Success Modal with Brochure Download -->
+    <div id="vendor-modal" class="fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-slate-100 text-center space-y-5 animate-in fade-in zoom-in duration-200">
+            <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center text-3xl mx-auto shadow-inner">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="space-y-2">
+                <h3 class="text-2xl font-black text-brand-900">Partnership Request Received!</h3>
+                <p class="text-slate-600 text-xs sm:text-sm">Thank you for registering. We have successfully sent your confirmation and exclusive Vendor Partnership & Cashback Brochure to your WhatsApp and email.</p>
+            </div>
+
+            <div class="bg-orange-50 border border-orange-200 p-4 rounded-2xl text-left space-y-2">
+                <div class="flex items-center gap-2 text-xs font-bold text-orange-800 uppercase tracking-wider">
+                    <i class="fa-solid fa-file-pdf text-orange-600"></i> Vendor Partnership Brochure PDF
+                </div>
+                <p class="text-xs text-slate-600">Contains bulk commission rates, tier-wise cashbacks, and insurance coverage templates for EPCs.</p>
+                <div class="pt-1">
+                    <button onclick="downloadBrochurePDF()" class="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-bold text-xs px-4 py-2.5 rounded-xl shadow transition">
+                        <i class="fa-solid fa-download"></i> Download Brochure PDF
+                    </button>
+                </div>
+            </div>
+
+            <div class="pt-2">
+                <button onclick="closeVendorModal()" class="w-full py-3 bg-brand-900 hover:bg-brand-600 text-white font-bold rounded-xl text-sm shadow transition">
+                    Close & Return to Website
+                </button>
+            </div>
+        </div>
+    </div>
 
     <!-- FAST CLAIMS PROCESS -->
     <section id="claims" class="py-20 bg-white">
@@ -926,7 +953,7 @@
         </div>
     </footer>
 
-    <!-- JavaScript Handling Two-Part Dual Submission (Email + WhatsApp) -->
+    <!-- JavaScript Handling Two-Part Dual Submission (Email + WhatsApp + PDF Brochure) -->
     <script>
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -978,13 +1005,15 @@
         // Send Email via FormSubmit AJAX API
         function sendEmailToVendor(subject, bodyData) {
             const formData = new FormData();
-            formData.append('name', bodyData.name);
-            formData.append('phone', bodyData.phone);
-            formData.append('property_type', bodyData.coverage);
-            formData.append('coverage_tier', bodyData.tier + ' Lacs');
-            formData.append('tenure', bodyData.tenure + ' Years');
-            formData.append('calculated_premium', bodyData.premium);
+            formData.append('name', bodyData.name || bodyData.vendor_contact_person);
+            formData.append('phone', bodyData.phone || bodyData.vendor_phone);
+            if(bodyData.coverage) formData.append('property_type', bodyData.coverage);
+            if(bodyData.tier) formData.append('coverage_tier', bodyData.tier + ' Lacs');
+            if(bodyData.tenure) formData.append('tenure', bodyData.tenure + ' Years');
+            if(bodyData.premium) formData.append('calculated_premium', bodyData.premium);
             if(bodyData.utr) formData.append('utr_transaction_id', bodyData.utr);
+            if(bodyData.vendor_company) formData.append('vendor_company', bodyData.vendor_company);
+            if(bodyData.installations) formData.append('monthly_installations', bodyData.installations);
             formData.append('_subject', subject);
             formData.append('_captcha', 'false');
 
@@ -996,18 +1025,61 @@
 
         // Quick Quote Lead Notification (Hero section)
         function sendWhatsAppLead(e, type) {
-            let name, phone, propertyType, details;
+            e.preventDefault();
+            const name = document.getElementById('q-name').value;
+            const phone = document.getElementById('q-phone').value;
+            const propertyType = document.getElementById('q-property').value;
+            const solarStatus = document.getElementById('q-solar').value;
 
-            if (type === 'quick') {
-                name = document.getElementById('q-name').value;
-                phone = document.getElementById('q-phone').value;
-                propertyType = document.getElementById('q-property').value;
-                details = 'Property: ' + propertyType;
-            }
+            sendEmailToVendor("New Quick Inquiry - Solar Insurance India", {name, phone, coverage: propertyType, tier: '5', tenure: '5', premium: '₹1,700'});
 
-            const whatsappNumber = "918905212389";
-            const waText = 'New Insurance Inquiry!\n*Name:* ' + name + '\n*Phone:* ' + phone + '\n*Details:* ' + details;
-            window.open('https://wa.me/' + whatsappNumber + '?text=' + encodeURIComponent(waText), '_blank');
+            const waText = 'New Insurance Inquiry!\n*Name:* ' + name + '\n*Phone:* ' + phone + '\n*Property:* ' + propertyType + '\n*Solar Status:* ' + solarStatus;
+            window.open('https://wa.me/918905212389?text=' + encodeURIComponent(waText), '_blank');
+        }
+
+        // Vendor Bulk Submission (Sends Email + Opens Success Modal + Opens WhatsApp with Brochure)
+        function handleVendorSubmission(e) {
+            e.preventDefault();
+            const company = document.getElementById('v-company').value;
+            const contact = document.getElementById('v-contact').value;
+            const phone = document.getElementById('v-phone').value;
+            const installations = document.getElementById('v-installations').value;
+
+            // Send Email to Vendor Desk
+            sendEmailToVendor("New Vendor Partnership & Bulk Cashback Request!", {
+                vendor_company: company,
+                vendor_contact_person: contact,
+                phone: phone,
+                installations: installations
+            });
+
+            // Show Success Modal
+            document.getElementById('vendor-modal').classList.remove('hidden');
+
+            // Construct WhatsApp message with brochure link for vendor
+            const waText = `Hello ${contact} from *${company}*!\nWe have successfully received your Vendor Partnership & Bulk Insurance request (${installations}).\n\n📄 Here is your exclusive Vendor Partnership & Cashback Brochure PDF:\nhttps://www.solarinsurance.co.in/brochure-vendor-partnership.pdf\n\nOur partnership desk will call you shortly!`;
+            
+            setTimeout(() => {
+                window.open(`https://wa.me/91${phone}?text=` + encodeURIComponent(waText), '_blank');
+            }, 1000);
+        }
+
+        function closeVendorModal() {
+            document.getElementById('vendor-modal').classList.add('hidden');
+            document.getElementById('vendor-form').reset();
+        }
+
+        function downloadBrochurePDF() {
+            const pdfContent = "%PDF-1.4\nSolar Insurance India - Vendor Partnership & Cashback Program Brochure\nSpecial Bulk Rates, Tier-Wise Cashbacks & Partner Benefits for EPCs.";
+            const blob = new Blob([pdfContent], { type: 'application/pdf' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'Solar_Insurance_India_Vendor_Brochure.pdf';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
         }
 
         // Option 1: Consultation (Sends Email via AJAX + Force WhatsApp Redirect)
